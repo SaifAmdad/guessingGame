@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Gessing game</title>
+    <link rel="shortcut icon" href="dice-solid.svg" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="game-card">
+        <h1 class="header">Guessing Game</h1>
+        <form>
+          <label for="guessing-number"
+            >Guess a number between '1' to '9' :
+          </label>
+          <input
+            type="number"
+            name="guessing-number"
+            id="guessing-number"
+            min="1"
+            max="9"
+            required
+          />
+          <button type="submit">Check</button>
+        </form>
+        <p class="resultMessage">?</p>
+        <p class="remainingAttempt"></p>
+        <p class="wonLost">Won:0, lose:0</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
